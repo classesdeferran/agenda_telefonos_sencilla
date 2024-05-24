@@ -2,12 +2,38 @@
 <body>
     <header><h1>Mi agenda de teléfonos</h1></header>
     <main>
-        <ul>
+        <table id="contactos" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Teléfono</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
             <% datos.forEach(contacto => { %>
-                <li><%= contacto.nombre %> <%= contacto.apellido %> -- 
-                    <%= contacto.telefono %> -- <%= contacto.tipo %></li>
+                <tr>
+                  <td><%= contacto.nombre %></td>
+                  <td><%= contacto.apellido %></td>
+                  <td><%= contacto.telefono %></td>
+                  <td><%= contacto.tipo %></tr></td>  
+                    </tr>                     
             <% }) %>
-        </ul>
+                </tbody>
+                <!-- <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Position</th>
+                        <th>Office</th>
+                        <th>Age</th>
+                        <th>Start date</th>
+                        <th>Salary</th>
+                    </tr>
+                </tfoot> -->
+            </table>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" type="text/javascript"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

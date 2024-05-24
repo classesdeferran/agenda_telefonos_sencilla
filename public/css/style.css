@@ -9,3 +9,7 @@ h1 {
     margin: 2rem;
     color: steelblue;
 }
+main {
+    margin : 0 auto;
+    width: 90%;
+}
