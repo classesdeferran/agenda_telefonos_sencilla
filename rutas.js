@@ -1,11 +1,10 @@
 // Cargar Express
-const express = require('express');
+const express = require("express");
 // Cargar configurador de rutas
 const rutas = express.Router();
 
-rutas.get('/', (req, res) => {
-    console.log("Estoy funcionando");
-    res.send('Estoy en rutas.js');
+rutas.get("/", (req, res) => {
+  res.render("index", { title: "Mi Agenda" });
 });
 
 module.exports = rutas;
