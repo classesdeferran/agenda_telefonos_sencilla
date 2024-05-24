@@ -1,0 +1,7 @@
+1 - Enlace al formulario desde la página inicial
+
+2 - Mostrar los datos en forma de tabla
+
+3 - Crear rutas para mostrar solo los contactos amigos o trabajo
+
+4 - Poner estilos decentes a todo el sitio web (¿bootstrap?)
